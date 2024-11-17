@@ -701,7 +701,7 @@ passionate about data science and machine learning</p>
             <a href='#resume' title=''><i class='fa-solid fa-file '/>Resume</a>
         </li>
         <li class='tmenu'>
-            <a href='#blog' title=''><i class='fa-solid fa-newspaper '/>Projects</a>
+          <a href='#blog' title=''><i class='fa-solid fa-code'/>Projects</a>
         </li>
         <li class='tmenu'>
             <a href='#contact' title=''><i class='fa-solid fa-envelope '/>Contact Me</a>
