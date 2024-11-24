@@ -5,86 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website - Home</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <style>
-        /* General reset and font styling */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-
-        body {
-            background: linear-gradient(135deg, #1d3557, #457b9d);
-            height: 100vh;
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        /* Navbar container */
-        .navbar {
-            position: absolute;
-            top: 2%;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 1.5rem;
-            background: #fff;
-            padding: 1rem 2rem;
-            border-radius: 15px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .navbar a {
-            text-decoration: none;
-            font-size: 1.2rem;
-            color: #333;
-            padding: 0.5rem 1.2rem;
-            position: relative;
-            border-radius: 15px;
-            display: flex;
-            align-items: center;
-            gap: 0.8rem;
-            transition: all 0.3s ease;
-        }
-
-        /* Hover Effect */
-        .navbar a:hover {
-            background-color: rgba(0, 0, 0, 0.1);
-            color: #333;
-        }
-
-        /* Active State */
-        .navbar a.active {
-            background-color: #000;
-            color: #fff;
-        }
-
-        /* Page Content */
-        .content {
-            text-align: center;
-            margin-top: 7rem;
-            color: #fff;
-            font-size: 2rem;
-        }
-
-        /* Responsive design */
-        @media (max-width: 768px) {
-            .navbar {
-                padding: 0.8rem 1.5rem;
-                gap: 1rem;
-            }
-
-            .navbar a {
-                font-size: 1rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
     <script>
         // JavaScript to handle active menu item
         document.addEventListener("DOMContentLoaded", () => {
@@ -102,11 +23,11 @@
 </head>
 <body>
     <nav class="navbar">
-        <a href="#home" id="home-link"><i class="fas fa-home"></i> Home</a>
-        <a href="#resume" id="resume-link"><i class="fas fa-file-alt"></i> Resume</a>
-        <a href="#project" id="project-link"><i class="fas fa-briefcase"></i> Project</a>
-        <a href="#article" id="article-link"><i class="fas fa-newspaper"></i> Article</a>
-        <a href="#bitcoin" id="bitcoin-link"><i class="fa-brands fa-bitcoin"></i> Bitcoin</a>
+        <a href="#home" id="home-link"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="#resume" id="resume-link"><i class="fas fa-file-alt"></i><span>Resume</span></a>
+        <a href="#project" id="project-link"><i class="fas fa-briefcase"></i><span>Project</span></a>
+        <a href="#article" id="article-link"><i class="fas fa-newspaper"></i><span>Article</span></a>
+        <a href="#bitcoin" id="bitcoin-link"><i class="fa-solid fa-bitcoin-sign"></i><span>Bitcoin</span></a>
     </nav>
     <div class="content">
         Welcome to my personal website! <br>
