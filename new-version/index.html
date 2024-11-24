@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website - Home</title>
+    <link rel="stylesheet" href="index.css">
+       
+    <script>
+        // JavaScript to handle active menu item
+        document.addEventListener("DOMContentLoaded", () => {
+            const links = document.querySelectorAll(".navbar a");
+            links.forEach(link => {
+                link.addEventListener("click", () => {
+                    // Remove active class from all links
+                    links.forEach(l => l.classList.remove("active"));
+                    // Add active class to the clicked link
+                    link.classList.add("active");
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#home" id="home-link">Home</a>
+        <a href="#resume" id="resume-link">Resume</a>
+        <a href="#project" id="project-link">Project</a>
+        <a href="#article" id="article-link">Article</a>
+        <a href="#bitcoin" id="bitcoin-link">Bitcoin</a>
+    </nav>
+    <div class="content">
+        Welcome to my personal website! <br>
+        Explore my work and interests through the navbar above.
+    </div>
+</body>
+</html>
